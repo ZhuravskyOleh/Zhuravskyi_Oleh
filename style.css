@@ -124,6 +124,8 @@ p {
 .contacts__item {
   flex-basis: 100%;
 }
+
+
 .contacts__link,
 .contacts__item:nth-last-of-type(1) {
   display: flex;
@@ -243,7 +245,7 @@ p {
 }
 
 .project__img:hover {
-  transform: scale(8);
+  transform: scale(4);
   z-index: 10;
 }
 
