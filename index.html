@@ -16,7 +16,7 @@
   <body>
     <main class="main container">
       <!------------- LEFT --------------->
-      <section class="left">
+      <div class="left">
         <img
           src="./images/zhuravsky_oleh.jpg"
           alt="Zhuravskyi Oleh"
@@ -24,18 +24,9 @@
         />
         <section class="contacts section">
           <!------- contacts -------->
+
           <h3 class="title contacts__title">Contacts</h3>
           <ul class="contacts__list list">
-            <!-- mail -->
-            <li class="contacts__item">
-              <a class="contacts__link" href="mailto:zhuravskyoleh@gmail.com">
-                <svg class="contacts__icon-mail" width="16" height="16">
-                  <use href="sprite.svg#envelope"></use>
-                </svg>
-                zhuravskyoleh@gmail.com
-              </a>
-            </li>
-
             <!-- phone -->
             <li class="contacts__item">
               <a class="contacts__link" href="tel:+380731582382">
@@ -43,6 +34,15 @@
                   <use href="sprite.svg#phone"></use>
                 </svg>
                 +380731582382
+              </a>
+            </li>
+            <!-- mail -->
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:zhuravskyoleh@gmail.com">
+                <svg class="contacts__icon-mail" width="16" height="16">
+                  <use href="sprite.svg#envelope"></use>
+                </svg>
+                zhuravskyoleh@gmail.com
               </a>
             </li>
 
@@ -54,7 +54,7 @@
               >
                 <svg class="contacts__icon-linIn" width="16" height="16">
                   <use href="sprite.svg#linkedin"></use>
-                </svg> 
+                </svg>
                 LinkedIn
               </a>
             </li>
@@ -132,7 +132,7 @@
             <li class="soft__item">Eager to learn</li>
             <li class="soft__item">Sociability</li>
             <li class="soft__item">Sense of humor</li>
-          </ul> 
+          </ul>
         </section>
 
         <!------- language -------->
@@ -143,17 +143,16 @@
               <h4>Ukranian</h4>
               <p class="lang__rate">Native</p>
             </li>
-            </li>
             <li class="lang__item">
               <h4>English</h4>
               <p class="lang__rate">Intermediate</p>
             </li>
           </ul>
         </section>
-      </section>
+      </div>
 
       <!------------ RIGHT --------------->
-      <section class="right">
+      <div class="right">
         <section class="introduce">
           <h1>Zhuravskyi Oleh</h1>
           <h2>Fullstack developer</h2>
@@ -171,125 +170,90 @@
           <!------- Project expierence ------->
           <section class="projects section">
             <h3 class="title projects__title">Project expierence</h3>
-            <ul class="projects__list">
-              <!-- WebStudio -->
-              <li class="project">
-                <img
-                  src="./images/WebStudio.png"
-                  alt="WebStudio"
-                  class="project__img"
-                />
-                <div class="flex-between">
-                  <a
-                    href="https://zhuravskyoleh.github.io/goit-markup-hw-08/"
-                    class="project__link"
-                    ><h4 class="project__title">WebStudio</h4></a
-                  >
-                  <p class="project__own">Personal project</p>
-                </div>
-
-                <p class="project__description">
+            <ul class="projects-list">
+              <li class="projects-list__item">
+                <a
+                  href="https://zhuravskyoleh.github.io/goit-markup-hw-08/"
+                  class="project-link"
+                  >WebStudio</a
+                >
+                <span>(personal project)</span>
+                <p class="project-description">
                   Adaptive and mobile first simple landing site web studio
-                  company with two pages.
+                  company with two pages. Role: developer. Build project on
+                  github, check for build errors and live page performance.
                 </p>
-                <div class="flex-between">
-                  <h5 class="project__stack">[ HTML, CSS, SASS ]</h5>
-                  <a
-                    href="https://zhuravskyoleh.github.io/goit-markup-hw-08/"
-                    class="project__link"
-                    >Code</a
-                  >
-                </div>
-              </li>
 
-              <!--  Tammy Food -->
-              <li class="project">
-                <img
-                  src="./images/tommyfood.jpg"
-                  alt="The New York Times"
-                  class="project__img"
-                />
-
-                <div class="flex-between">
-                  <a
-                    href="https://zhuravskyoleh.github.io/TammyFood/"
-                    class="project__link">
-                    <h4 class="project__title">Tammy Food</h4>
-                    </a>
-                  <p class="project__own">Personal project</p>
-                </div>
-
-                <p class="project__description">
-                  Landing page for restaurant
-                </p>
-                <div class="flex-between">
+                <div class="wrapp">
                   <h5 class="project__stack">
-                    [ HTML, CSS, SASS ]
+                    Technologies: [ HTML, CSS, SASS ]
                   </h5>
-                  <a
-                    href="https://github.com/ZhuravskyOleh/TammyFood"
-                    class="project__link"
+                  <a href="https://github.com/ZhuravskyOleh/goit-markup-hw-08"
                     >Code</a
                   >
                 </div>
               </li>
-
-              <!-- Filmoteka -->
-              <li class="project">
-                <img
-                  src="./images/filmoteka.jpg"
-                  alt="Hotel"
-                  class="project__img"
-                />
-
-                <div class="flex-between">
-                  <a href="https://pavlogram.github.io/project-group-13/" class="project__link"
-                    ><h4 class="project__title">Filmoteka</h4></a
-                  >
-                  <p class="project__own">Team project</p>
-                </div>
-
-                <p class="project__description">
-                  Movie search site.
+              <li class="projects-list__item">
+                <a
+                  href="https://zhuravskyoleh.github.io/TammyFood/"
+                  class="project-link"
+                  >Tammy Food</a
+                >
+                <span>(personal project)</span>
+                <p class="project-description">
+                  Landing page for restaurant. Role: developer. Build project on
+                  github, check for build errors and live page performance.
                 </p>
-                <div class="flex-between">
-                  <h5 class="project__stack">[HTML, CSS, JavaScript]</h5>
+
+                <div class="wrapp">
+                  <h5 class="project__stack">
+                    Technologies: [ HTML, CSS, SASS ]
+                  </h5>
+                  <a href="https://github.com/ZhuravskyOleh/TammyFood">Code</a>
+                </div>
+              </li>
+              <li class="projects-list__item">
+                <a
+                  href="https://pavlogram.github.io/project-group-13/"
+                  class="project-link"
+                  >Filmoteka</a
+                >
+                <span>(team project)</span>
+                <p class="project-description">
+                  Application for choosing a movie. Role: developer. Build
+                  project on GitHub
+                </p>
+                <div class="wrapp">
+                  <h5 class="project__stack">
+                    Technologies: [HTML, SASS, JS, Handlebars, REST API, AJAX,
+                    Parcel]
+                  </h5>
                   <a
                     href="https://github.com/ZhuravskyOleh/Filmoteka-Group-Progect"
-                    class="project__link"
                     >Code</a
                   >
                 </div>
               </li>
-
-              <!-- Ice Cream -->
-              <li class="project">
-                <img
-                  src="./images/IceCream.png"
-                  alt="IceCream"
-                  class="project__img"
-                />
-
-                <div class="flex-between">
-                  <a
-                    href="https://bolotinalexey.github.io/go-it-team-project"
-                    class="project__link"
-                    ><h4 class="project__title">Ice Cream</h4></a
-                  >
-                  <p class="project__own">Team project</p>
-                </div>
-
-                <p class="project__description">
+              <li class="projects-list__item">
+                <a
+                  href="https://bolotinalexey.github.io/go-it-team-project"
+                  class="project-link"
+                  >Ice Cream</a
+                >
+                <span>(team project)</span>
+                <p class="project-description">
                   Web site with adaptive and mobile first design presenting ice
-                  cream-ordering company. My role - scrum master, product section and all modal windows.
+                  cream-ordering company. Role: Scrum-master,developer. App
+                  component with Public and Private routes, AuthPage page logic.
+                  Deploy project on GitHub.
                 </p>
-                <div class="flex-between">
+
+                <div class="wrapp">
                   <h5 class="project__stack">
-                    [ HTML, SASS, Parcel, JavaScript ]
+                    Technologies: [ HTML, SASS, Parcel, JavaScript, REST API ]
                   </h5>
                   <a
-                    href="https://github.com/ZhuravskyOleh/Ice-cream-group-project"
-                    class="project__link"
+                    href="https://github.com/ZhuravskyOleh/Filmoteka-Group-Progect"
                     >Code</a
                   >
                 </div>
@@ -310,9 +274,7 @@
 
                 <ul class="work__item-list">
                   <li class="work__name">
-                    <p class="work__description">
-                      Management
-                    </p>
+                    <p class="work__description">Management</p>
                   </li>
                   <li class="work__name">
                     <p class="work__description">Customer service</p>
@@ -348,19 +310,17 @@
               <!-- NAU -->
               <li class="education__item">
                 <div class="flex-between">
-                  <h4 class="education__name">
-                    National Aviation University
-                  </h4>
+                  <h4 class="education__name">National Aviation University</h4>
                   <p class="period">september 2004 - june 2006</p>
                 </div>
                 <p class="education__desription">
-                  Air Traffic Controller
+                  Air Traffic Controller (incompleted higher education)
                 </p>
               </li>
             </ul>
           </section>
         </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>
