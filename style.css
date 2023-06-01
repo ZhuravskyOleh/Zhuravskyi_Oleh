@@ -225,10 +225,6 @@ a {
   font-size: 0.95rem;
 }
 
-.wrapp {
-  display: flex;
-  justify-content: space-between;
-}
 
 .project__title {
   font-size: 1.2rem;
